@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/app.css">
+    <title>JS Project</title>
+</head>
+<body>
+    <header>
+      <div id="text">
+          <h3>Welcome to JavaScript Mid-Term Quiz</h3>
+          <p>In this quiz, there are 10 questiosns. You have to choose the correct answer out of 4 choices,
+             in less than 10 seconds for each question, if you didn't answer the question in 10sec,
+             it will go to the next question automatically, and the question is marked wrong.
+             the progress bar, that shows the total number of question, and also if you answered
+             a question correctly or not.</p>
+         <h3>When you are ready click Start Quiz, and good luck !</h3> 
+      </div>  
+    </header>
+
+    <main>
+        <div id = "container">`
+            <div id="start">Start Quiz</div>
+            <div id="quiz" style="display: none">
+                <div id = "question"></div>
+                <div id="choices">
+                    <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                    <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                    <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                    <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+                </div>    
+                <div id="timer">
+                    <div id="counter"></div>
+                    <div id="btimeGauge"></div>
+                    <div id="timeGauge"></div>
+                </div> 
+                <div id="progress"></div>
+            </div>  
+            <div id="scoreContainer" style="display: none"></div>
+        </div>     
+    </main>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
